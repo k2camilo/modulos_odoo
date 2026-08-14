@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="action_trm_diaria" model="ir.actions.act_window">
+        <field name="name">Histórico TRM</field>
+        <field name="res_model">trm.diaria</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_trm_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard TRM</field>
+        <field name="res_model">trm.dashboard</field>
+        <field name="view_mode">form</field>
+        <field name="res_id" ref="trm_dashboard_default"/>
+    </record>
+
+    <record id="action_trm_consulta" model="ir.actions.act_window">
+        <field name="name">Consulta TRM</field>
+        <field name="res_model">trm.consulta</field>
+        <field name="view_mode">form</field>
+    </record>
+</odoo>

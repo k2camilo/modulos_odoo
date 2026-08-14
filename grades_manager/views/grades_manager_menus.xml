@@ -1,0 +1,9 @@
+<odoo>
+    <menuitem id="grades_manager_menu" name="Grades Manager"/> <!-- Menu de primer nivel - aplicacion -->
+    <menuitem id="grades_course_group_menu" sequence="1" parent="grades_manager.grades_manager_menu" name="Course"/> <!-- Menu de segundo nivel - barra de menus -->
+    <menuitem id="teachers_menu" parent="grades_manager.grades_manager_menu" name="Teacher" action="teachers_action"/> <!-- Menu de segundo nivel - barra de menus -->
+    <menuitem id="grades_course_menu" parent="grades_manager.grades_course_group_menu" name="Course" action="grades_course_action"/> <!-- Menu de segundo nivel - barra de menus -->
+    <menuitem id="evaluation_menu" parent="grades_manager.grades_course_group_menu" name="Evaluation" action="grades_evaluation_action"/> <!-- Menu de tercer nivel -->
+    <menuitem id="grades_menu" parent="grades_manager.grades_course_group_menu" name="Grades" action="grades_grade_action"/>
+    <menuitem id="students_menu" parent="grades_manager.grades_manager_menu" name="Students" action="students_action"/>
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <menuitem id="menu_trm_root" name="Consulta TRM" sequence="10" web_icon="consulta_trm,static/description/icon.png"/>
+    <menuitem id="menu_trm_dashboard" name="Dashboard" parent="menu_trm_root" action="action_trm_dashboard" sequence="1"/>
+    <menuitem id="menu_trm_historial" name="Histórico" parent="menu_trm_root" action="action_trm_diaria" sequence="10"/>
+    <menuitem id="menu_trm_consulta" name="Consulta" parent="menu_trm_root" action="action_trm_consulta" sequence="11"/>
+</odoo>

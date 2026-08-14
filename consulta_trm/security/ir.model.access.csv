@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+trm_diaria_access,trm.diaria.access,model_trm_diaria,,1,1,1,1
+trm_dashboard_access,trm.dashboard.access,model_trm_dashboard,,1,1,1,1
+trm_consulta_access,trm.consulta.access,model_trm_consulta,,1,1,1,1

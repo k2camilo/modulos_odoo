@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_trm_diaria_tree" model="ir.ui.view">
+        <field name="name">trm.diaria.tree</field>
+        <field name="model">trm.diaria</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="fecha"/>
+                <field name="valor_cop"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_trm_diaria_form" model="ir.ui.view">
+        <field name="name">trm.diaria.form</field>
+        <field name="model">trm.diaria</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="fecha"/>
+                        <field name="valor_cop"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
