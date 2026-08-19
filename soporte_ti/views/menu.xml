@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <menuitem id="menu_soporte_ti_root" name="Soporte TI" sequence="10" web_icon="soporte_ti,static/description/icon.png"/>
+    <menuitem id="menu_soporte_categorias" name="Categorías" parent="menu_soporte_ti_root" action="action_soporte_categoria" sequence="10"/>
+</odoo>
