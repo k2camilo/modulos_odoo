@@ -1,2 +1,3 @@
 "id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
 soporte_categoria_access,soporte.categoria.access,model_soporte_categoria,base.group_user,1,1,1,1
+soporte_ticket_access,soporte.ticket.access,model_soporte_ticket,base.group_user,1,1,1,1
