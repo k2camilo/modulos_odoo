@@ -20,6 +20,7 @@
     'data': [
         'security/ir.model.access.csv',
         'data/soporte_sequence.xml',
+        'views/soporte_ticket_views.xml',
         'views/soporte_categoria_views.xml',
         'views/soporte_actions.xml',
         'views/menu.xml',

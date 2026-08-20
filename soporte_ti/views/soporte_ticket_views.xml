@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_soporte_ticket_tree" model="ir.ui.view">
+        <field name="name">soporte.ticket.tree</field>
+        <field name="model">soporte.ticket</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="titulo"/>
+                <field name="solicitante_id"/>
+                <field name="tecnico_id"/>
+                <field name="cliente_id"/>
+                <field name="categoria_id"/>
+                <field name="prioridad"/>
+                <field name="fecha_creacion"/>
+                <field name="fecha_limite"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_soporte_ticket_form" model="ir.ui.view">
+        <field name="name">soporte.ticket.form</field>
+        <field name="model">soporte.ticket</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="estado" widget="statusbar" statusbar_visible="nuevo,asignado,en_progreso,resuelto,cerrado,cancelado"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="titulo"/>
+                        <field name="solicitante_id"/>
+                        <field name="fecha_creacion"/>
+                        <field name="cliente_id"/>
+                        <field name="descripcion"/>
+                    </group>
+                    <group>
+                        <field name="tecnico_id"/>                        
+                        <field name="categoria_id"/>
+                        <field name="prioridad"/>                        
+                        <field name="fecha_limite"/>
+                    </group>
+                    <group>
+                        <field name="diagnostico"/>                        
+                        <field name="fecha_cierre"/>
+                        <field name="solucion"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

@@ -3,8 +3,9 @@ from odoo import models, fields, api
 class SoporteTicket(models.Model):
     _name = 'soporte.ticket'
     _description = 'Ticket para soporte TI'
+    _order = 'name desc'
 
-    name=fields.Char(string='Referencia', required=True, copy=False, readonly=True, default="Nuevo Ticket")
+    name=fields.Char(string='Referencia', required=True, copy=False, readonly=True, default=lambda self: self.env['ir.sequence'].next_by_code('soporte.ticket') or 'Nuevo')
     titulo=fields.Char(string="Título", required=True)
     descripcion=fields.Text(string='Descripción')
     solicitante_id=fields.Many2one('res.users', string='Solicitante', required=True, default=lambda self: self.env.user,)
@@ -17,5 +18,13 @@ class SoporteTicket(models.Model):
     diagnostico=fields.Text(string='Diagnostico')
     fecha_cierre=fields.Datetime(string='Fecha de cierre', required=True)
     solucion=fields.Text(string='Solucion')
+    estado=fields.Selection([
+        ('nuevo', 'Nuevo'),
+        ('asignado', 'Asignado'),
+        ('en_progreso', 'En Progreso'),
+        ('resuelto', 'Resuelto'),
+        ('cerrado', 'Cerrado'),
+        ('cancelado', 'Cancelado')
+    ], string='Estado', default='nuevo', required=True)
 
 

@@ -2,5 +2,6 @@
 
 <odoo>
     <menuitem id="menu_soporte_ti_root" name="Soporte TI" sequence="10" web_icon="soporte_ti,static/description/icon.png"/>
-    <menuitem id="menu_soporte_categorias" name="Categorías" parent="menu_soporte_ti_root" action="action_soporte_categoria" sequence="10"/>
+    <menuitem id="menu_soporte_tickets" name="Tickets" parent="menu_soporte_ti_root" action="action_soporte_ticket" sequence="10"/>
+    <menuitem id="menu_soporte_categorias" name="Categorías" parent="menu_soporte_ti_root" action="action_soporte_categoria" sequence="20"/>
 </odoo>

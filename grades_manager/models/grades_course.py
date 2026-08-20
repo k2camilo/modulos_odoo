@@ -25,7 +25,7 @@ class GradesCourse(models.Model):
     evaluation_ids = fields.One2many('grades.evaluation', 'course_id', string='Evaluations')
     student_ids = fields.Many2many('res.partner', 'grades_corse_students_rel',string='Students')
     state = fields.Selection([('register','Register'),('in_progrese','In Progress'),('done','Done')],
-                             string='State', default='register')
+                            string='State', default='register')
     invalid_date = fields.Boolean(string='Invalid Date')
 
     def write(self, vals):
